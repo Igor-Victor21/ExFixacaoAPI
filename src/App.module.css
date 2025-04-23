@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.s1{
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:right;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./assets/images/background-white-goku.jpg");
+    min-height: 100vh;
+}
+
+.img{
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.slogan{
+    background-color: rgba(255, 255, 255, 0.591);
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slogan h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 999px;
+    padding: 10px;
+}
+
+  @media (width < 1000px){
+    
+  }
+    
+
