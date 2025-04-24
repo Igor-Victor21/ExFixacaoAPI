@@ -24,6 +24,7 @@ export default function Req(){
 
     return(
         <section className={style.wrapPage}>
+            <h5><a className={style.backBtn}href="/">Voltar</a></h5>
             <h1 className={style.tittleName}>DragonBall API</h1>
             {erro && <p>Página não encontrada</p>}
             <input className={style.input} type="text" placeholder='Digite uma página (1/6)' value={page} onChange={(e) => setPage(e.target.value)}/>

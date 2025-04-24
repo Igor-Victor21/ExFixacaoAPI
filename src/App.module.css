@@ -4,15 +4,11 @@
     box-sizing: border-box;
 }
 .s1{
+    background-color: black;
     display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:right;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    flex-direction: column;
-    background-image: url("./assets/images/background-white-goku.jpg");
-    min-height: 100vh;
+    justify-content: center;
 }
 
 .img{
@@ -23,7 +19,7 @@
 .slogan{
     background-color: rgba(255, 255, 255, 0.591);
     border-radius: 10px;
-    width: 300px;
+    width: 600px;
     padding: 10px;
     margin-top: 30px;
     justify-content: center;
@@ -52,7 +48,7 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("./assets/images/background-little-goku-orange.jpg");
+    background-color: black;
     min-height: 100vh;    
 }
 
@@ -63,19 +59,43 @@ button{
     border-radius: 10px;
     width: 300px;
     padding: 10px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.s2 button{
+    margin-bottom: 100px;
+}
+
 .verVideo{
     width: 100%;
     max-width: 560px;
-    margin-top: 1rem;
+    border-radius: 10px;
 }
 
-  @media (width < 1000px){
-    
+  @media (width > 1000px){
+    .img{
+        margin-top: 150px;
+        flex-direction: row;
+        justify-content: left;
+        align-self: left;
+        width: 300px;
+        height: auto;
+    }
+    .s1{
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        gap: 45vh;
+        background-image: url("./assets/images/dragon-ball-son-goku-chi-chi-manga-kid-goku-hd-wallpaper-preview.jpg");
+    }
+    .s2{
+        background-image: url("./assets/images/background-little-goku-orange.jpg");
+        padding: 300px;
+    }
   }
     
 

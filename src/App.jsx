@@ -9,13 +9,12 @@ function App() {
   const [descBtn, setDescBtn] = useState(false)
   const [verVideo, setVerVideo] = useState(false)
 
-
   const btnAparecer = () => {
-    setDescBtn(true)
+    setDescBtn(!descBtn)
   }
 
   const verVideoYT = () =>{
-    setVerVideo(true)
+    setVerVideo(!verVideo)
   }
   return (
     <>
@@ -41,7 +40,7 @@ function App() {
           </div>
           )}
 
-        <button onClick={verVideoYT}>Assistir ao Vídeo</button>
+        <button className={style.btnVideo} onClick={verVideoYT}>Assistir ao Vídeo</button>
         {verVideo && (
           <div className='verVideo'>
             {/*iFrame permite com que consiga colocar videos dentro de uma página html */}
@@ -53,7 +52,7 @@ function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen>  
           </iframe>
-          <button >Fechar Vídeo</button>
+          {/* <button >Fechar Vídeo</button> */}
           </div>
         )}
       </section>
