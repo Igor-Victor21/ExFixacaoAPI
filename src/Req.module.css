@@ -1,13 +1,67 @@
-section{
-    background-color: black;
-}
-.wrapCards{
+.wrapPage{
     display: flex;
-    background-color: white;
-    max-width: 250px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1vh;
+    background-image: url("./assets/images/Dragon-Ball-Z-Kakarot-1-1024x576.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h5 a{
+    background-color: gray;
+    color: aliceblue;
+}
+
+.backBtn{
+    background-color: gray !important;
+    text-align: center;
+    border-radius: 999px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h4{
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+.tittleName{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.input{
+    border: 2px solid black;
+    border-radius: 999px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.wrapCards{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+@media(width > 1000px){
+    .wrapCards{
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        
+    }
 }
